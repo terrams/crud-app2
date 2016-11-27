@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type: 
+  weakness: MyString
+  region: MyString
+  speed: MyString
+
+two:
+  name: MyString
+  type: 
+  weakness: MyString
+  region: MyString
+  speed: MyString

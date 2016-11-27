@@ -1,0 +1,46 @@
+<div>
+ 
+  <div>Enter a new zombie:</div>
+  <% @zombies.each do |zombie| %>
+    <div class="row">
+      <div class="col-sm-1">
+        Name:
+      </div> 
+      <div class='col-sm-11'>
+        <%= zombie.name %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        Type:
+      </div> 
+      <div class='col-sm-11'>
+        <%= zombie.type %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        Weakness:
+      </div> 
+      <div class='col-sm-11'>
+        <%= zombie.weakness %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        Region:
+      </div> 
+      <div class='col-sm-11'>
+        <%= zombie.region %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        Speed:
+      </div> 
+      <div class='col-sm-11'>
+        <%= zombie.speed %>
+      </div>
+    </div>
+  <% end %>
+</div>

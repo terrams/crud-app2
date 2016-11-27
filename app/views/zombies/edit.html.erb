@@ -1,0 +1,27 @@
+<h1>Update this Zombie</h1>
+<%= form_tag "/zombies/#{@zombie.id}", method: :patch do %>
+
+  <div>
+    <%= label_tag :name, 'Update First Name: ' %>
+    <%= text_field_tag :name, @zombie.name, class:'form-control' %>
+  </div>
+  <div>
+    <%= label_tag :type, 'Update Middle Name: ' %>
+    <%= text_field_tag :type, @contact.type, class:'form-control' %>
+  </div>
+  <div>
+    <%= label_tag :weakness, 'Update Last Name: ' %>
+    <%= text_field_tag :weakness, @contact.weakness, class:'form-control' %>
+  </div>
+  <div>
+    <%= label_tag :region, 'Update Email: ' %>
+    <%= text_field_tag :region, @contact.region, class:'form-control' %>
+  </div>
+  <div>
+    <%= label_tag :speed, 'Update phone number: ' %>
+    <%= text_field_tag :speed, @contact.speed, class:'form-control' %>
+  </div>
+   <div>
+    <button type="button" class="btn btn-primary"><%= submit_tag 'Submit!' %></button>
+  </div>
+<% end %> 
